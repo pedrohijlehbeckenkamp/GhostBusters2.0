@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29102.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GhostBusters_Forms", "GhostBusters_Forms\GhostBusters_Forms.csproj", "{BD1D684A-BFAE-4A2E-97F7-180176433279}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GhostBusters_Infra", "GhostBusters_Infra\GhostBusters_Infra.csproj", "{D0C71078-0687-4BB8-B167-CBEAC26F04E8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BD1D684A-BFAE-4A2E-97F7-180176433279}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD1D684A-BFAE-4A2E-97F7-180176433279}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD1D684A-BFAE-4A2E-97F7-180176433279}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD1D684A-BFAE-4A2E-97F7-180176433279}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0C71078-0687-4BB8-B167-CBEAC26F04E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0C71078-0687-4BB8-B167-CBEAC26F04E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0C71078-0687-4BB8-B167-CBEAC26F04E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0C71078-0687-4BB8-B167-CBEAC26F04E8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C9BA4DA9-D7F6-4889-A8CA-8A288F343CB0}
+	EndGlobalSection
+EndGlobal

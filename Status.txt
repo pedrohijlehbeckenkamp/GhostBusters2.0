@@ -1,0 +1,15 @@
+﻿Default
+	
+
+Técnico
+	Em atendimento
+	Finalizado
+
+Usuário
+	Aprovado
+	Reprovado
+	Cancelado
+
+Admin
+	Aguardando atendimento
+	All

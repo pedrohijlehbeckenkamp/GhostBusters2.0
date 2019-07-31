@@ -1,0 +1,327 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BD1D684A-BFAE-4A2E-97F7-180176433279}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>GhostBusters_Forms</RootNamespace>
+    <AssemblyName>GhostBusters_Forms</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\pedro.beckenkamp\Desktop\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controller\AnexoController.cs" />
+    <Compile Include="Controller\CategoriaController.cs" />
+    <Compile Include="Controller\ChamadoController.cs" />
+    <Compile Include="Controller\LogController.cs" />
+    <Compile Include="Controller\StatusController.cs" />
+    <Compile Include="Mapper\LogMapper.cs" />
+    <Compile Include="Model\LogModel.cs" />
+    <Compile Include="View\Adm\ExcluirCSP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Adm\ExcluirCSP.Designer.cs">
+      <DependentUpon>ExcluirCSP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Ticket\AlterarStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Ticket\AlterarStatus.Designer.cs">
+      <DependentUpon>AlterarStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Ticket\LogMovimentacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Ticket\LogMovimentacao.Designer.cs">
+      <DependentUpon>LogMovimentacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Utilitarios\AlterarSenha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Utilitarios\AlterarSenha.Designer.cs">
+      <DependentUpon>AlterarSenha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mapper\AnexoMapper.cs" />
+    <Compile Include="Mapper\CategoriaMapper.cs" />
+    <Compile Include="Mapper\ChamadoMapper.cs" />
+    <Compile Include="Mapper\StatusMapper.cs" />
+    <Compile Include="Model\Anexo.cs" />
+    <Compile Include="Model\CategoriaModel.cs" />
+    <Compile Include="Model\ChamadoModel.cs" />
+    <Compile Include="Model\StatusModel.cs" />
+    <Compile Include="Validacoes.cs" />
+    <Compile Include="View\Adm\ConfigAdm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Adm\ConfigAdm.Designer.cs">
+      <DependentUpon>ConfigAdm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Adm\EditarCadCompleto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Adm\EditarCadCompleto.Designer.cs">
+      <DependentUpon>EditarCadCompleto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Categoria\CadastrarCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Categoria\CadastrarCategoria.Designer.cs">
+      <DependentUpon>CadastrarCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Utilitarios\EditarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Utilitarios\EditarUsuario.Designer.cs">
+      <DependentUpon>EditarUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\PerfilP\CadastroPerfil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\PerfilP\CadastroPerfil.Designer.cs">
+      <DependentUpon>CadastroPerfil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Tech\IniciTech.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Tech\IniciTech.Designer.cs">
+      <DependentUpon>IniciTech.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Ticket\AddTechChamado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Ticket\AddTechChamado.Designer.cs">
+      <DependentUpon>AddTechChamado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Ticket\ExcluirChamado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Ticket\ExcluirChamado.Designer.cs">
+      <DependentUpon>ExcluirChamado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Usuário Comum\AlteraPic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Usuário Comum\AlteraPic.Designer.cs">
+      <DependentUpon>AlteraPic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Usuário Comum\InicUsuarioComum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Usuário Comum\InicUsuarioComum.Designer.cs">
+      <DependentUpon>InicUsuarioComum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Adm\TelaPrincipalAdm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Adm\TelaPrincipalAdm.Designer.cs">
+      <DependentUpon>TelaPrincipalAdm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Status\CadastrarStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Status\CadastrarStatus.Designer.cs">
+      <DependentUpon>CadastrarStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Ticket\CadastrarTicket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Ticket\CadastrarTicket.Designer.cs">
+      <DependentUpon>CadastrarTicket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Utilitarios\CadastroUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Utilitarios\CadastroUsuario.Designer.cs">
+      <DependentUpon>CadastroUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Utilitarios\login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Utilitarios\Login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mapper\ImagemMapper.cs" />
+    <Compile Include="Mapper\PerfilMapper.cs" />
+    <Compile Include="Mapper\UsuarioMapper.cs" />
+    <Compile Include="Model\ImagemModel.cs" />
+    <Compile Include="Model\PerfilModel.cs" />
+    <Compile Include="Model\Usuario.cs" />
+    <Compile Include="Controller\ImagemController.cs" />
+    <Compile Include="Controller\PerfilController.cs" />
+    <Compile Include="Controller\UsuarioController.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="View\Adm\ExcluirCSP.resx">
+      <DependentUpon>ExcluirCSP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Ticket\AlterarStatus.resx">
+      <DependentUpon>AlterarStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Ticket\LogMovimentacao.resx">
+      <DependentUpon>LogMovimentacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Utilitarios\CadastroUsuario.resx">
+      <DependentUpon>CadastroUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Utilitarios\AlterarSenha.resx">
+      <DependentUpon>AlterarSenha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Utilitarios\Login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="View\Adm\ConfigAdm.resx">
+      <DependentUpon>ConfigAdm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Adm\EditarCadCompleto.resx">
+      <DependentUpon>EditarCadCompleto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Categoria\CadastrarCategoria.resx">
+      <DependentUpon>CadastrarCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Utilitarios\EditarUsuario.resx">
+      <DependentUpon>EditarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\PerfilP\CadastroPerfil.resx">
+      <DependentUpon>CadastroPerfil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Tech\IniciTech.resx">
+      <DependentUpon>IniciTech.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Ticket\AddTechChamado.resx">
+      <DependentUpon>AddTechChamado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Ticket\ExcluirChamado.resx">
+      <DependentUpon>ExcluirChamado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Usuário Comum\AlteraPic.resx">
+      <DependentUpon>AlteraPic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Usuário Comum\InicUsuarioComum.resx">
+      <DependentUpon>InicUsuarioComum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Adm\TelaPrincipalAdm.resx">
+      <DependentUpon>TelaPrincipalAdm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Status\CadastrarStatus.resx">
+      <DependentUpon>CadastrarStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Ticket\CadastrarTicket.resx">
+      <DependentUpon>CadastrarTicket.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GhostBusters_Infra\GhostBusters_Infra.csproj">
+      <Project>{d0c71078-0687-4bb8-b167-cbeac26f04e8}</Project>
+      <Name>GhostBusters_Infra</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddChamadoTech.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ExcluirChamado.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carregando.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bastidoresnovologogoogle_03.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 e x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
